@@ -1,27 +1,27 @@
 
-global	_ft_isdigit
+global	_ft_isalpha
 
-_ft_isdigit:
+_ft_isalpha:
 	cmp		rdi, 64
-	jng		_isdigit_end
+	jng		_isalpha_end
 
 	cmp		rdi, 91
-	jnl		_isdigit_min
+	jnl		_isalpha_min
 
 	mov		rax, 1
 	ret
 
-_isdigit_min:
+_isalpha_min:
 	cmp		rdi, 123
-	jnl		_isdigit_end
+	jnl		_isalpha_end
 
-	cmp		rdi, 97
-	jng		_isdigit_end
+	cmp		rdi, 96
+	jng		_isalpha_end
 
-	mov		rax, 0
+	mov		rax, 1
 	ret
 
 
-_isdigit_end:
+_isalpha_end:
 	mov		rax, 0
 	ret

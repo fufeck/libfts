@@ -13,6 +13,9 @@
 #ifndef LIBFTS_H
 # define LIBFTS_H
 
+void				bzero(void *s, size_t n);
 int					ft_isdigit(int a);
+int					ft_isalpha(int a);
+int					ft_isalnum(int a);
 
 #endif

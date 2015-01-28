@@ -27,7 +27,10 @@ LIBS		=	-L. -lfts
 CFLAGS		=	-Werror -Wall -Wextra
 
 
-SRCS_L		=	srcs/ft_isdigit.s
+SRCS_L		=	srcs/ft_bzero.s 		\
+				srcs/ft_isdigit.s 		\
+				srcs/ft_isalpha.s 		\
+				srcs/ft_isalnum.s
 
 SRCS		=	main.c
 
